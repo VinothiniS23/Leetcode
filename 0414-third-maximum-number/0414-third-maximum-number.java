@@ -15,7 +15,7 @@ class Solution {
         }
         for (int num:nums) {
               if (num<s && num>t) {
-                = num;
+                t= num;
                }
         }
         if (t==Long.MIN_VALUE) {
