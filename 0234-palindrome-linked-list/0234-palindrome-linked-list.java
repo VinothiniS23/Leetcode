@@ -28,7 +28,7 @@ class Solution {
         cur=next;
     }
     sh=prev;
-while(fh!=null && sh!=null){
+while(fh!=null && sh!=null){ 
         if(fh.val!=sh.val){
             return false;
         }fh=fh.next;
