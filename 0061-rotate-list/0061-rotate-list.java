@@ -10,16 +10,17 @@
  */
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
+        int cnt=0;
          ListNode temp=head;
-        int c=0;
+        
         while(temp!=null)
         {
-            c++;
+            cnt++;
             temp=temp.next;
         }
-        if(c!=0)
+        if(cnt!=0)
         { 
-            k=k%c;
+            k=k%cnt;
         }
         for(int i=0;i<k;i++)
         {
