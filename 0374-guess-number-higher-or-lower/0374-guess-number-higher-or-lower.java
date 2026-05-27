@@ -16,12 +16,12 @@ public class Solution extends GuessGame {
             int mid = low + (high - low) / 2;
             int result = guess(mid);
 
-            if (result == 0) {
+            if (result==0) {
                 return mid;
-            } else if (result < 0) {
-                high = mid - 1;
+            } else if(result<0) {
+                high=mid-1;
             } else {
-                low = mid + 1;
+                low=mid+1;
             }
         }
 
